@@ -14,6 +14,8 @@
 		3516DE6D232A1F98007F378C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3516DE6B232A1F98007F378C /* LaunchScreen.storyboard */; };
 		3516DE7B232A2B86007F378C /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3516DE7A232A2B86007F378C /* IntentHandler.swift */; };
 		3516DE7F232A2B86007F378C /* IntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3516DE78232A2B86007F378C /* IntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3516DE88232A2F71007F378C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3516DE87232A2F71007F378C /* DataService.swift */; };
+		3516DE8A232A3A8B007F378C /* DoubleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3516DE89232A3A8B007F378C /* DoubleExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3516DE78232A2B86007F378C /* IntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3516DE7A232A2B86007F378C /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		3516DE7C232A2B86007F378C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3516DE87232A2F71007F378C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		3516DE89232A3A8B007F378C /* DoubleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +96,10 @@
 		3516DE61232A1F84007F378C /* LegDay */ = {
 			isa = PBXGroup;
 			children = (
+				3516DE86232A2F61007F378C /* Services */,
+				3516DE85232A2F5A007F378C /* Controller */,
+				3516DE84232A2F4F007F378C /* Extensions */,
 				3516DE62232A1F84007F378C /* AppDelegate.swift */,
-				3516DE64232A1F84007F378C /* WorkoutVC.swift */,
 				3516DE66232A1F85007F378C /* Main.storyboard */,
 				3516DE69232A1F98007F378C /* Assets.xcassets */,
 				3516DE6B232A1F98007F378C /* LaunchScreen.storyboard */,
@@ -109,6 +115,30 @@
 				3516DE7C232A2B86007F378C /* Info.plist */,
 			);
 			path = IntentHandler;
+			sourceTree = "<group>";
+		};
+		3516DE84232A2F4F007F378C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3516DE89232A3A8B007F378C /* DoubleExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3516DE85232A2F5A007F378C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3516DE64232A1F84007F378C /* WorkoutVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3516DE86232A2F61007F378C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3516DE87232A2F71007F378C /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3516DE88232A2F71007F378C /* DataService.swift in Sources */,
 				3516DE65232A1F84007F378C /* WorkoutVC.swift in Sources */,
+				3516DE8A232A3A8B007F378C /* DoubleExt.swift in Sources */,
 				3516DE63232A1F84007F378C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
